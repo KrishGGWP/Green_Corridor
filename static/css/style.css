@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h1 {
+    color: #1e7f43;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.btn.primary {
+    background-color: #1e7f43;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: #e8f5ee;
+    color: #1e7f43;
+}
+
+.btn.primary:hover {
+    background-color: #166534;
+}
+
+.btn.secondary:hover {
+    background-color: #d1fae5;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn.danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn.danger:hover {
+    background-color: #b91c1c;
+}
+
+.record-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.record-info {
+    text-align: left;
+}
+
+.record-info span {
+    font-weight: 600;
+    color: #555;
+}
+
+.record-card img {
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.btn.back {
+    margin-top: 30px;
+    background-color: #e5e7eb;
+    color: #333;
+}
+
+.btn.back:hover {
+    background-color: #d1d5db;
+}

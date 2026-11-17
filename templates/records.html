@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Violation Records</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-row">
+            <h1>Violation Records</h1>
+            <a href="/clear" class="btn danger">Clear All</a>
+        </div>
+
+        {% for r in records %}
+            <div class="record-card">
+                <div class="record-info">
+                    <p><span>Plate Number:</span> {{ r.plate_number }}</p>
+                    <p><span>Detected At:</span> {{ r.detected_at }}</p>
+                </div>
+                <img src="/{{ r.image_path }}" alt="Vehicle Image">
+            </div>
+        {% endfor %}
+
+        <a href="/" class="btn back">← Back to Home</a>
+    </div>
+
+</body>
+</html>
